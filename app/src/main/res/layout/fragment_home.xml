@@ -30,20 +30,27 @@
 
         <Button
             android:id="@+id/start"
-            android:layout_width="match_parent"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
             android:text="@string/start" />
 
         <Button
             android:id="@+id/stop"
-            android:layout_width="match_parent"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="7dp"
+            android:background="@drawable/button"
             android:text="@string/stop" />
 
         <Button
             android:id="@+id/restart"
-            android:layout_width="match_parent"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
             android:text="@string/restart" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

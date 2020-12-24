@@ -33,9 +33,6 @@ class DashboardViewModel (application: Application): AndroidViewModel(applicatio
             var cts:List<City> = gson.fromJson(str,CityType)
             cts = cts.filter { it.city_code!="" }
             _cities.postValue((cts))
-
-
-            Log.d("ManiActivity","$cities")
         }
     }
 
