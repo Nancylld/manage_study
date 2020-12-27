@@ -26,7 +26,8 @@ class DashboardViewModel (application: Application): AndroidViewModel(applicatio
 
     init {
 
-        thread {
+
+        thread{
             val str = readFileFromRaw(R.raw.citycode)
             val gson = Gson()
             val CityType = object :TypeToken<List<City>>(){}.type
@@ -34,6 +35,11 @@ class DashboardViewModel (application: Application): AndroidViewModel(applicatio
             cts = cts.filter { it.city_code!="" }
             _cities.postValue((cts))
         }
+
+
+
+
+
     }
 
     fun readFileFromRaw(rawName: Int): String? {

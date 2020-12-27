@@ -2,7 +2,7 @@
     <string name="app_name">manage_study</string>
     <string name="title_home">Time</string>
     <string name="title_dashboard">Weather</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_notifications">Calculator</string>
     <string name="start">start</string>
     <string name="stop">stop</string>
     <string name="restart">restart</string>
