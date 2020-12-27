@@ -50,15 +50,18 @@ class MainActivity : AppCompatActivity() {
             ).get(DashboardViewModel::class.java)
 
         dashboardViewModel.cities.observe(this, Observer {
-            val cities: List<City> = it
+            val cities= it
             val adapter = ArrayAdapter<City>(this, android.R.layout.simple_list_item_1,cities)
-            listview.adapter=adapter
-            listview.setOnItemClickListener { _, _, position, _ ->
-                val cityCode = cities[position].city_code
-                val intent = Intent(this,MainActivity2::class.java)
-                intent.putExtra("city_code",cityCode)
-                startActivity(intent)
-            }
+
+                listview.adapter=adapter
+                listview.setOnItemClickListener { _, _, position, _ ->
+                    val cityCode = cities[position].city_code
+                    val intent = Intent(this,MainActivity2::class.java)
+                    intent.putExtra("city_code",cityCode)
+                    startActivity(intent)
+                }
+
+
         })
 
 
